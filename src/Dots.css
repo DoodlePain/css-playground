@@ -1,0 +1,65 @@
+.firstDot {
+  animation: jump 1.2s linear 0s infinite;
+}
+.secondDot {
+  margin-left: 25px;
+  animation: jump 1.2s linear 0.3s infinite;
+}
+.thirdDot {
+  margin-left: 50px;
+  animation: jump 1.2s linear 0.6s infinite;
+}
+.fourthDot {
+  margin-left: 75px;
+  animation: jump 1.2s linear 0.9s infinite;
+}
+
+.firstDot,
+.fourthDot,
+.secondDot,
+.thirdDot {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 25px;
+  position: absolute;
+  margin-top: 200px;
+}
+@keyframes jump {
+  0% {
+    top: 0;
+  }
+  40% {
+    top: 0;
+  }
+  50% {
+    top: -7.5%;
+  }
+  70% {
+    top: 0;
+  }
+  100% {
+    top: 0;
+  }
+}
+.bubble {
+  width: 180px;
+  height: 140px;
+  background: #4080ff;
+  border-radius: 25%;
+  margin-top: 110px;
+  margin-left: 240px;
+  padding-left: 70px;
+}
+
+.bubble::after {
+  content: "";
+  width: 70px;
+  height: 70px;
+  background: #4080ff;
+  margin-top: 110px;
+  position: absolute;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  margin-left: -160px;
+}

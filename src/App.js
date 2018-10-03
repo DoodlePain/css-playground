@@ -1,25 +1,21 @@
 import React, { Component } from "react";
 import "./App.css";
+import LinearLoader from "./LinearLoader";
+import RoundLoader from "./RoundLoader";
+import DotsLine from "./DotsLine";
+import BubbleDot from "./BubbleDot";
 
 class App extends Component {
+  state = {
+    color: "#3498db"
+  };
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          {/* <h1 className="App-title">Loading</h1>
-          <div className="wrapper">
-            <div className="firstLine" />
-            <div className="secondLine" />
-            <div className="thirdLine" />
-          </div> */}
-          <h1 className="App-title">Loading</h1>
-          <div className="wrapper2">
-            <div className="outside" />
-            <div className="middle" />
-            <div className="center" />
-            <div className="dot" />
-          </div>
-        </header>
+        {/* <LinearLoader /> */}
+        {/* <RoundLoader /> */}
+        <DotsLine />
+        {/* <BubbleDot /> */}
       </div>
     );
   }
