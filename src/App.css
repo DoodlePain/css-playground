@@ -1,0 +1,160 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  height: 800px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.wrapper {
+  width: 300px;
+  height: 500px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.firstLine,
+.secondLine,
+.thirdLine {
+  width: 0%;
+  height: 10%;
+  margin-top: 10%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.firstLine {
+  animation: lineAnimation 1.5s linear 0s infinite;
+}
+.secondLine {
+  animation: lineAnimation 1.5s linear 0.3s infinite;
+}
+.thirdLine {
+  animation: lineAnimation 1.5s linear 0.5s infinite;
+}
+
+@keyframes lineAnimation {
+  0% {
+    background: rgba(0, 0, 0, 0);
+    width: 0%;
+  }
+  20% {
+    margin-left: 0%;
+  }
+  25% {
+    width: 20%;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  50% {
+    width: 60%;
+    background: rgba(0, 0, 0, 0.4);
+    margin-left: 33%;
+  }
+  70% {
+    width: 0%;
+    margin-left: 100%;
+  }
+  98% {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    width: 0%;
+    margin-left: 100%;
+    background: rgba(0, 0, 0, 0);
+  }
+}
+
+.wrapper2 {
+  width: 10%;
+  height: 10%;
+}
+
+.outside {
+  border: 3px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  border-top: 3px solid #3498db;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  /* -webkit-animation: spin 2s linear infinite;  */
+  animation: spin 1.5s linear 0s infinite;
+}
+
+.middle {
+  border: 3px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  border-top: 3px solid #3498db;
+  width: 90px;
+  position: absolute;
+  height: 90px;
+  margin: 15px 15px;
+  /* -webkit-animation: spin 2s linear infinite;  */
+  animation: spin 2s linear 0.5s infinite;
+}
+
+.center {
+  border: 3px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  border-top: 3px solid #3498db;
+  width: 60px;
+  position: absolute;
+  margin: 30px 10px 10px 30px;
+  height: 60px;
+  /* -webkit-animation: spin 2s linear infinite;  */
+  animation: spin 1.5s linear 0.5s infinite;
+}
+
+/* .dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  animation: blink 1.5s linear 0.5s infinite;
+  position: absolute;
+  margin: 42px 10px 10px 42px;
+} */
+
+.dot {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #3498db;
+  border-radius: 50%;
+  position: absolute;
+  margin: 45px 10px 10px 45px;
+  border-top: 3px solid #3498db;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  /* 80% {
+    transform: rotate(30deg);
+  } */
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes blink {
+  0% {
+    background: rgba(52, 152, 219, 0);
+  }
+  20% {
+    background: rgba(52, 152, 219, 1);
+  }
+  80% {
+    background: rgba(52, 152, 219, 1);
+  }
+  100% {
+    background: rgba(52, 152, 219, 0);
+  }
+}
