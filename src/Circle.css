@@ -1,0 +1,11 @@
+.circle{
+    border: 5px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    border-top: 5px solid #3498db;
+    border-bottom: 5px solid #3498db;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    /* -webkit-animation: spin 2s linear infinite;  */
+    animation: spin 1.5s linear 0s infinite;
+  }

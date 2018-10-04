@@ -4,6 +4,8 @@ import LinearLoader from "./LinearLoader";
 import RoundLoader from "./RoundLoader";
 import DotsLine from "./DotsLine";
 import BubbleDot from "./BubbleDot";
+import ThreeSquares from "./ThreeSquares";
+import HalfCircle from "./HalfCircle";
 
 class App extends Component {
   state = {
@@ -14,8 +16,10 @@ class App extends Component {
       <div className="App">
         {/* <LinearLoader /> */}
         {/* <RoundLoader /> */}
-        <DotsLine />
+        {/* <DotsLine /> */}
         {/* <BubbleDot /> */}
+        {/* <HalfCircle /> */}
+        <ThreeSquares />
       </div>
     );
   }
