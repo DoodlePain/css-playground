@@ -6,6 +6,7 @@ import DotsLine from "./DotsLine";
 import BubbleDot from "./BubbleDot";
 import ThreeSquares from "./ThreeSquares";
 import HalfCircle from "./HalfCircle";
+import BarLoader from "./BarLoader";
 
 class App extends Component {
   state = {
@@ -13,13 +14,14 @@ class App extends Component {
   };
   render() {
     return (
-      <div className="App">
+      <div className="App-header">
         {/* <LinearLoader /> */}
         {/* <RoundLoader /> */}
         {/* <DotsLine /> */}
         {/* <BubbleDot /> */}
         {/* <HalfCircle /> */}
-        <ThreeSquares />
+        {/* <ThreeSquares /> */}
+        <BarLoader />
       </div>
     );
   }
