@@ -18,10 +18,10 @@ class App extends Component {
         {/* <LinearLoader /> */}
         {/* <RoundLoader /> */}
         {/* <DotsLine /> */}
-        {/* <BubbleDot /> */}
+        <BubbleDot />
         {/* <HalfCircle /> */}
         {/* <ThreeSquares /> */}
-        <BarLoader />
+        {/* <BarLoader /> */}
       </div>
     );
   }
