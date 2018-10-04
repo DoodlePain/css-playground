@@ -1,7 +1,9 @@
 .wrapperSquares{
     width: 250px;
     height: 250px;
-    background: rgba(25,52,65,0.75);
+    /* background: rgba(25,52,65,0.75); */
+    background: rgba(0,0,0,0.75);
+    /* background: #ffffcb; */
     border-radius:25px;
 }
 
@@ -14,19 +16,22 @@
     top: 15px;
 }
 .firstSquare{
-    background: rgb(145,170,157);
+    /* background: rgb(145,170,157); */
+    background: #fac090;
     animation: first 4s linear  infinite;
 }
 
 .secondSquare{
-    background: rgb(209,219,189);
+    /* background: rgb(209,219,189); */
+    background:#ff7c81;
     top: 15px;
     animation: second 4s linear  0.25s infinite;
     left: 130px;
 }
 
 .thirdSquare{
-    background: rgb(252,255,245);
+    /* background: rgb(252,255,245); */
+    background: #c0f6d2;
     top: 125px;
     animation: third 4s linear  0.5s infinite;
     left: 130px;
