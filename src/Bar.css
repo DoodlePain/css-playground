@@ -1,0 +1,40 @@
+.bar{
+    width: 100px;
+    height: 25px;
+    border-radius: 25px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background-color: #4b9bbe;
+    overflow: hidden;
+    border: 2px solid #4b9bbe;
+}
+
+.first,.second,.third,.fourth{
+    width: 35%;
+    height: 100%;
+    left: -35%;
+    position: absolute;
+}
+
+.first{
+    background: #eef3ef;
+    animation: slide 2s infinite linear;
+}
+.second{
+    background: #f9aa47;
+    animation: slide 2s infinite 0.5s linear;
+}
+.third{
+    background: #c93228;
+    animation: slide 2s infinite 1s linear;
+}
+.fourth{
+    background: #3e6d8d;
+    animation: slide 2s infinite 1.5s linear;
+}
+
+@keyframes slide {
+    0%{left: -35% }
+    100%{left: 100%}
+}

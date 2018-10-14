@@ -1,0 +1,154 @@
+.wrapperSquares{
+    width: 250px;
+    height: 250px;
+    /* background: rgba(25,52,65,0.75); */
+    /* background: rgba(0,0,0,0.75); */
+    /* background: #ffffcb; */
+    border-radius:25px;
+}
+
+.firstSquare,.secondSquare,.thirdSquare{
+    width: 95px;
+    height: 95px;
+    position: absolute;
+    border-radius: 25px;
+    left: 20px;
+    top: 15px;
+}
+.firstSquare{
+    /* background: rgb(145,170,157); */
+    background: #fac090;
+    animation: first 4s linear  infinite;
+}
+
+.secondSquare{
+    /* background: rgb(209,219,189); */
+    background:#ff7c81;
+    top: 15px;
+    animation: second 4s linear  0.25s infinite;
+    left: 130px;
+}
+
+.thirdSquare{
+    /* background: rgb(252,255,245); */
+    background: #c0f6d2;
+    top: 125px;
+    animation: third 4s linear  0.5s infinite;
+    left: 130px;
+}
+
+@keyframes first{
+    0%{
+        top: 15px;
+    }
+    10%{
+        left: 20px;
+        top: 125px;
+    }
+    25%{
+        left: 20px;
+        top: 125px;
+    }  
+    35%{
+        left: 130px;
+        top: 125px;
+    } 
+    50%{
+        left: 130px;
+        top: 125px;
+    }
+    60%{
+        left: 130px;
+        top: 15px;
+    }
+    75%{
+        left: 130px;
+        top: 15px;
+    }
+    85%{
+        left: 20px;
+        top: 15px;
+    }
+    100%{
+        left: 20px;
+        top: 15px;
+    }
+}
+
+@keyframes second{
+    0%{
+        left: 130px;
+        top: 15px;
+    }
+    10%{
+        left: 20px;
+        top: 15px;
+    }
+    25%{
+        left: 20px;
+        top: 15px;
+    }
+    35%{
+        left: 20px;
+        top: 125px;
+    }
+    50%{
+        left: 20px;
+        top: 125px;
+    }   
+    60%{
+        left: 130px;
+        top: 125px;
+    }
+    75%{
+        left: 130px;
+        top: 125px;
+    }
+    85%{
+        left: 130px;
+        top: 15px;
+    }
+    100%{
+        left: 130px;
+        top: 15px;
+    }
+}
+
+@keyframes third{
+    0%{
+        left: 130px;
+        top: 125px;
+    }
+    10%{
+        left: 130px;
+        top: 15px;
+    }
+    25%{
+        left: 130px;
+        top: 15px;
+    }
+    35%{
+        left: 20px;
+        top: 15px;
+    }
+    50%{
+        left: 20px;
+        top: 15px;
+    }
+    60%{
+        left: 20px;
+        top: 125px;
+    }
+    75%{
+        left: 20px;
+        top: 125px;
+    }  
+    85%{
+        left: 130px;
+        top: 125px;
+    }
+    100%{
+        left: 130px;
+        top: 125px;
+    } 
+}
