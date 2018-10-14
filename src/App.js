@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import "./App.css";
-import LinearLoader from "./LinearLoader";
-import RoundLoader from "./RoundLoader";
-import DotsLine from "./DotsLine";
-import BubbleDot from "./BubbleDot";
+// import LinearLoader from "./Components/Linear/LinearLoader";
+import TopLine from "./Components/Linear/TopLine";
+// import RoundLoader from "./Components/Circle/RoundLoader";
+// import DotsLine from "./Components/Bubble/DotsLine";
+// import BubbleDot from "./Components/Bubble/BubbleDot";
 
 class App extends Component {
   state = {
@@ -14,8 +15,9 @@ class App extends Component {
       <div className="App">
         {/* <LinearLoader /> */}
         {/* <RoundLoader /> */}
-        <DotsLine />
+        {/* <DotsLine /> */}
         {/* <BubbleDot /> */}
+        <TopLine />
       </div>
     );
   }

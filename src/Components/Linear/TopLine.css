@@ -1,0 +1,41 @@
+.TopLine {
+    position: fixed;
+    top: -2%;
+    left: 0%;
+    width: 100%;
+    height: 0.5%;
+    z-index: 0;
+    background: rgba(35, 173, 278, 1);
+    animation: loadingBar 5s ease-in-out;
+    box-shadow: 0px 0px 6px 3px rgba(35, 173, 278, 1);
+}
+
+@keyframes loadingBar {
+    0% {
+        top: -2%;
+        width: 0%;
+    }
+    10% {
+        top: 0%;
+        width: 0%;
+    }
+    30% {
+        width: 40%;
+    }
+    45% {
+        width: 50%;
+    }
+    60% {
+        width: 60%;
+    }
+    90% {
+        width: 100%;
+        top: 0%;
+    }
+    95% {
+        top: -2%;
+    }
+    100% {
+        top: -2%;
+    }
+}
